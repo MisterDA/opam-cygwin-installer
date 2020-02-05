@@ -2,10 +2,12 @@
 
 set -eu
 
-OPAM32_URL='https://dl.dropboxusercontent.com/s/eo4igttab8ipyle/opam32.tar.xz'
-OPAM64_URL='https://dl.dropboxusercontent.com/s/b2q2vjau7if1c1b/opam64.tar.xz'
+OPAM_REPO_MINGW_VERSION='0.0.0.2'
+OPAM_REPO_MINGW_URL="https://github.com/fdopen/opam-repository-mingw/releases/download/${OPAM_REPO_MINGW_VERSION}"
+OPAM32_URL="${OPAM_REPO_MINGW_URL}/opam32.tar.xz"
+OPAM64_URL="${OPAM_REPO_MINGW_URL}/opam64.tar.xz"
 
-STDUTILS_URL='https://bitbucket.org/lord_mulder/stdutils/downloads/StdUtils.2015-10-10.zip'
+STDUTILS_URL='https://github.com/lordmulder/stdutils/releases/download/1.08/StdUtils.2015-10-10.zip'
 THEME_URL='http://nsis.sourceforge.net/mediawiki/images/5/5d/Orange-Full-MoNKi.zip'
 
 dir="$(dirname "$0")"
