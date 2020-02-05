@@ -14,6 +14,10 @@ dir="$(dirname "$0")"
 dir="$(readlink -f "$dir")"
 cd "$dir"
 
+command -v wget >/dev/null 2>&1 || { echo >&2 "wget is missing."; exit 1; }
+command -v ocamlfind >/dev/null 2>&1 || { echo >&2 "ocamlfind is missing."; exit 1; }
+command -v unzip >/dev/null 2>&1 || { echo >&2 "unzip is missing."; exit 1; }
+
 if [ ! -f opam32.tar.xz ] ; then
     wget "$OPAM32_URL" -O opam32.tar.xz
 fi
