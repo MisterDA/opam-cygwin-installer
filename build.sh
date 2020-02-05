@@ -8,7 +8,7 @@ OPAM32_URL="${OPAM_REPO_MINGW_URL}/opam32.tar.xz"
 OPAM64_URL="${OPAM_REPO_MINGW_URL}/opam64.tar.xz"
 
 STDUTILS_URL='https://github.com/lordmulder/stdutils/releases/download/1.08/StdUtils.2015-10-10.zip'
-THEME_URL='http://nsis.sourceforge.net/mediawiki/images/5/5d/Orange-Full-MoNKi.zip'
+THEME_URL='https://nsis.sourceforge.io/mediawiki/images/5/5d/Orange-Full-MoNKi.zip'
 
 dir="$(dirname "$0")"
 dir="$(readlink -f "$dir")"
